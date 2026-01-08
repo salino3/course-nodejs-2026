@@ -4,5 +4,8 @@
   "version": "0.0.1",
   "main": "module",
   "author": "Salino3",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ms": "^2.1.3"
+  }
 }
