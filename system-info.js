@@ -10,3 +10,7 @@ console.log("Time activity (Seconds): ", os.uptime());
 console.log("CPUS: ", os.cpus());
 console.log("Network interface: ", os.networkInterfaces());
 console.log("--------------------");
+
+console.log("Number nucleos: ", os.cpus().length);
+console.log("Hostname: ", os.hostname());
+console.log("Release OS: ", os.release());
