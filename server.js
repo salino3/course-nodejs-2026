@@ -1,5 +1,7 @@
 import { createServer } from "node:http";
 
+process.loadEnvFile();
+
 const port = process.env.PORT ?? 3000;
 
 const server = createServer((req, res) => {
