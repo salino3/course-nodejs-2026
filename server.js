@@ -26,7 +26,7 @@ const server = createServer(async (req, res) => {
   // &
   // =
   // , or |
-  console.log("Full url: ", url); // ex. '/users?limit=2'
+  console.log("Full url: ", url); // ex. '/users?limit=2&offset=1'
   const [pathname, queryString] = url.split("?");
   const searchParams = new URLSearchParams(queryString);
   console.log("searchParams", searchParams.get("limit"));
