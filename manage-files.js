@@ -1,5 +1,5 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { join } from "node:path";
+import { join, basename, extname } from "node:path";
 
 // slash '/' optional
 const contentReadFile = await readFile("./archivo.txt", "utf-8");
@@ -19,3 +19,8 @@ await mkdir(outputDir, { recursive: true });
 const upperCaseContent = contentReadFile.toUpperCase();
 await writeFile(`./${outputDir}/archivo-uppercase.txt`, upperCaseContent);
 console.log("upperCaseContent: ", upperCaseContent);
+console.log("Name extention: ", extname(upperCaseContent));
+console.log(
+  "Name basename: ",
+  basename(`./${outputDir}/archivo-uppercase.txt`)
+);
