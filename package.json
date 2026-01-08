@@ -5,6 +5,9 @@
   "main": "module",
   "author": "Salino3",
   "license": "MIT",
+  "scripts": {
+    "manage": "node --experimental-permission --permission --allow-fs-read='./archivo.txt' --allow-fs-write='./output/*' manage-files.js"
+  },
   "dependencies": {
     "ms": "^2.1.3"
   }
